@@ -13,10 +13,9 @@ public class MainController {
 		return "redirect:/home";
 	}
 
-	@PostMapping("/login")
+	@GetMapping("/login")
 	public String postHome(Model model) {
-		model.addAttribute("home", new Entity());
-		return "redirect:/home";
+		return "login";
 	}
 
 	@GetMapping("/home")
